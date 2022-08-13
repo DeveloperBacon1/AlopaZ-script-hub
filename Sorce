@@ -1,0 +1,262 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/zxciaz/VenyxUI/main/Reuploaded"))() --someone reuploaded it so I put it in place of the original back up so guy can get free credit.
+local Window = library.new("Alopaz", 5013109572)
+
+-- Autos
+
+local plrs = game:GetService("Players")
+local plr = plrs.LocalPlayer
+local char = plr.Character
+local hum = char.Humanoid
+local Animate = char.Animate
+hum.UseJumpPower = true
+
+-- Home
+
+local House = Window:addPage("Home", 5012544693)
+local Credits = House:addSection("Credits")
+local Otherstuff = House:addSection("Other stuff")
+
+Credits:addButton("Made by Jopzll THE COOLEST HECKER IN THE WORLD", function()
+end)
+
+Credits:addButton("Copy youtube channel", function()
+ setclipboard("https://www.youtube.com/channel/UC_VUlhzx0vrX-TYjF1W74aQ")
+end)
+
+Credits:addButton("Copy Discord", function()
+ setclipboard("https://discord.gg/YGmZcAvKVe")
+end)
+
+Otherstuff:addButton("Execute My latest script 'COINU'", function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/DeveloperBacon1/Coin-U/main/Key%20System"))()
+end)
+
+-- Player
+
+local Player = Window:addPage("Player", 5012544693)
+local H = Player:addSection("Humanoid")
+local A = Player:addSection("Animations")
+
+H:addSlider("WalkSpeed", 16, 16, 1000, function(value)
+ hum.WalkSpeed = value
+end)
+
+H:addSlider("JumpPower", 50, 50, 1000, function(value)
+ hum.JumpPower = value
+end)
+
+A:addButton("Ninja Animation", function()
+ Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=656117400"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=656118341"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=656121766"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=656118852"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=656114359"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606"
+end)
+
+A:addButton("Stylish Animation", function()
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616136790"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616138447"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616146177"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616140816"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616139451"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616133594"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616134815"
+end)
+
+A:addButton("Toy Animation", function()
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=782841498"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=782845736"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=782843345"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=782842708"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=782847020"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=782843869"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=782846423"
+end)
+
+A:addButton("Werewolf Animation", function()
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083195517"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083214717"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083178339"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083216690"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083218792"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083182000"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1083189019"
+end)
+
+A:addButton("Zombie Animation", function()
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616158929"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616160636"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616168032"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616161997"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616156119"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616157476"
+end)
+
+-- Custom Animations
+
+A:addButton("Partol (CUSTOM)", function()
+ Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1149612882"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1150842221"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1151231493"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1150967949"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1148811837"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1148811837"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1148863382"
+end)
+
+A:addButton("Confident (CUSTOM)", function()
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1069977950"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1069987858"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1070017263"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1070001516"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1069984524"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1069946257"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1069973677"
+end)
+
+A:addButton("Popstar (CUSTOM)", function()
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1212900985"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1150842221"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1212980338"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1212980348"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1212954642"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1213044953"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1212900995"
+end)
+
+A:addButton("Ghost (CUSTOM)", function()
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616006778"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616008087"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616013216"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616013216"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616008936"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616005863"
+end)
+
+A:addButton("Sneaky (CUSTOM)", function()
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1132473842"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1132477671"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1132510133"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1132494274"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1132489853"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1132461372"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1132469004"
+end)
+
+A:addButton("Princess (CUSTOM)", function()
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=941003647"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=941013098"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=941028902"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=941015281"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=941008832"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=940996062"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=941000007"
+end)
+
+-- Prison life
+
+
+local PF = Window:addPage("Prison life", 5012544693)
+local M = PF:addSection("Main")
+
+M:addDropdown("Give gun", {"Remington 870", "AK-47", "M9"}, function(text)
+   local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver[text].ITEMPICKUP
+   local Event = game:GetService("Workspace").Remote.ItemHandler
+   Event:InvokeServer(A_1)
+end)
+
+M:addDropdown("Mod gun", {"Remington 870", "AK-47", "M9"}, function(v)
+ module = nil
+  if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(v) then
+   module = require(game:GetService("Players").LocalPlayer.Backpack[v].GunStates)
+    elseif game:GetService("Players").LocalPlayer.Character:FindFirstChild(v) then
+   module = require(game:GetService("Players").LocalPlayer.Character[v].GunStates)
+  end
+ if module ~= nil then
+  module["MaxAmmo"] = math.huge
+  module["CurrentAmmo"] = math.huge
+  module["StoredAmmo"] = math.huge
+  module["FireRate"] = 0.000001
+  module["Spread"] = 0
+  module["AutoFire"] = true
+  module["Bullets"] = 10
+  module["ReloadTime"] = 0.1
+ end
+end)
+
+-- Ninja legedns
+
+local PF = Window:addPage("Ninja legends", 5012544693)
+local A = PF:addSection("Autofarm")
+local T = PF:addSection("Teleport")
+
+A:addToggle("Autoswing (EQUIP Katana)", nil, function(v)
+ getgenv().autoswing = v
+ while true do
+     if not getgenv().autoswing then return end
+     local A_1 = "swingKatana"
+     local Event = plr.ninjaEvent
+     Event:FireServer(A_1)
+     wait(0.025)
+     end
+end)
+
+A:addToggle("Autosell", nil, function(v)
+ getgenv().autoswing = v
+ while true do
+     if not getgenv().autoswing then return end
+     game:GetService("Workspace").sellAreaCircles.sellAreaCircle16.circleInner.CFrame = char.HumanoidRootPart.CFrame
+     wait(0.1)
+     game:GetService("Workspace").sellAreaCircles.sellAreaCircle16.circleInner.CFrame = CFrame.new(0,0,0)
+     wait(0.1)
+     end
+end)
+
+T:addButton("Unlock all islands", function()
+  local oldp = char.HumanoidRootPart.CFrame
+  for _,v in pairs(game:GetService("Workspace").islandUnlockParts:GetChildren()) do
+       char.HumanoidRootPart.CFrame = v.CFrame
+       wait(0.1)
+      end
+end)
+
+-- Tapping legends x
+
+
+local TLX = Window:addPage("Tapping legends x", 5012544693)
+local Ma = TLX:addSection("Main")
+
+Ma:addToggle("AutoTap", nil, function(v)
+_G.at = v
+while _G.at == true do
+     game:GetService("ReplicatedStorage").Remotes.Tap:FireServer()
+     wait(0.00000000000000001)
+    end
+end)
+
+Ma:addToggle("AutoRebirth", nil, function(v)
+_G.at = v
+while _G.at == true do
+local args = {
+    [1] = 1
+}
+game:GetService("ReplicatedStorage").Remotes.Rebirth:FireServer(unpack(args))
+    wait(0.000000001)
+    end
+end)
+
+-- Settings
+
+local S = Window:addPage("Settings", 5012544693)
+local Mai = S:addSection("Main")
+
+
+
+Mai:addKeybind("Toggle Keybind", Enum.KeyCode.Q, function()
+Window:toggle()
+end, function()
+print("Changed Keybind")
+end)
